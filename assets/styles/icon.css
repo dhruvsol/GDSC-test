@@ -1,0 +1,16 @@
+body {
+    background-color: #f1f5f9;
+}
+
+.icon {
+    width: 2.7rem;
+    aspect-ratio: 1;
+    border-style: none;
+    background-color: #f1f5f9;
+}
+.shuffle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5rem;
+}
