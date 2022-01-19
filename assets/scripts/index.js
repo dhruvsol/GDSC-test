@@ -1,10 +1,5 @@
 import axios from "https://cdn.skypack.dev/axios";
 
-const first = await axios({
-  method: "GET",
-  url: "https://jsonplaceholder.typicode.com/photos",
-});
-
 const second = await axios({
   method: "GET",
   url: "https://jsonplaceholder.typicode.com/users",
