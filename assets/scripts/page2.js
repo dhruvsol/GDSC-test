@@ -8,7 +8,7 @@ const first = await axios({
 let x =0;
 const id1 = document.querySelector('.id-page2');
 const title  = document.querySelector('.title');
-const src = document.querySelector('.img').getAttribute("src");
+const src = document.querySelector('.img');
 const forward = document.querySelector('.forward');
 const backward = document.querySelector('.backward');
 const shuffle = document.querySelector('.shuffle');
@@ -16,9 +16,7 @@ const shuffle = document.querySelector('.shuffle');
 const changeValue = ()=> {
     id1.innerHTML=first.data[x].id
     title.innerHTML=first.data[x].title
-    src.innerHTML=first.data[x].thumbnailUrl
-    // console.log(src)
-    // console.log(first.data[x].thumbnailUrl)
+    src.src=first.data[x].thumbnailUrl
 }
 forward.addEventListener('click',()=>{
     x+=1;
